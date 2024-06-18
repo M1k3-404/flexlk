@@ -3,6 +3,7 @@ import Link from "next/link";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import { Dropdown, DropdownItem, DropdownMenu, DropdownTrigger } from "@nextui-org/react";
 
+
 export default function Navigation() {
     return (
         <React.StrictMode>
@@ -14,7 +15,7 @@ export default function Navigation() {
 
                 {/* Desktop: Navigation Links */}
                 <div className="flex-row gap-10 lg:flex hidden">
-                    <Link className="text-white font-light uppercase hover:text-[#f1f1f1] active:text-[#fdfdfd]" href="/about-us">About Us</Link>
+                    <Link className="text-white font-light uppercase hover:text-[#f1f1f1] active:text-[#fdfdfd]" href="/about">About Us</Link> 
                     <Link className="text-white font-light uppercase hover:text-[#f1f1f1] active:text-[#fdfdfd]" href="/services">Services</Link>
                     <Link className="text-white font-light uppercase hover:text-[#f1f1f1] active:text-[#fdfdfd]" href="/projects">Projects</Link>
                     <Link className="text-white font-light uppercase hover:text-[#f1f1f1] active:text-[#fdfdfd]" href="/careers">Careers</Link>
@@ -31,10 +32,10 @@ export default function Navigation() {
                     </DropdownTrigger>
 
                     <DropdownMenu variant="flat" className="h-screen w-screen bg-[#1d1d1d]" aria-label="menu actions">
-                        <DropdownItem key="about-us" className="py-5" 
+                        <DropdownItem key="about" className="py-5" 
                             description="Unveiling the story behind our brand. Dive into our story, values and what makes us tick."
                         >
-                            <Link className="text-white font-normal uppercase active:text-[#f1f1f1]" href="/about-us">About Us</Link>
+                            <Link className="text-white font-normal uppercase active:text-[#f1f1f1]" href="/about">About Us</Link>
                         </DropdownItem>
 
                         <DropdownItem key="services" className="py-5"

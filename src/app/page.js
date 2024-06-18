@@ -27,7 +27,7 @@ import Blog from './ui/homepage/blog';
 import Link from 'next/link';
 import { MdOutlineEmail } from 'react-icons/md';
 import { IoCallOutline } from 'react-icons/io5';
-import ModelViewer from './ui/modelViewer';
+// import ModelViewer from './ui/modelViewer';
 
 export default function Home() {
   {/* Client Logo Slider Configuration */}
@@ -110,7 +110,7 @@ export default function Home() {
     <div className="w-full min-h-screen 2xl:px-80">
       {/* Header Section */}
       <div className="h-screen max-h-[1024px] radial-bg">
-        <ModelViewer />
+        {/* <ModelViewer /> */}
         {/* Header Title */}
         {/* <div className='pt-64 md:pt-60 lg:pt-60 xl:pt-80 min-[2048px]:pt-60 2xl:pt-80 w-[75%]'>
           <p className="relative text-4xl md:text-7xl lg:text-6xl xl:text-8xl z-40 text-left font-thin px-5 md:px-20 md:pt-10">We narrate brand stories worth luxury</p>
