@@ -1,7 +1,6 @@
 "use client";
 
 import Image from 'next/image';
-import bgImage from '../media/Rectangle.png';
 import bgImageSmall from '../media/Rectangle-sm.png';
 import def from '../media/default.jpg';
 import cafe from '../media/cafe.jpg';
@@ -28,6 +27,7 @@ import Blog from './ui/homepage/blog';
 import Link from 'next/link';
 import { MdOutlineEmail } from 'react-icons/md';
 import { IoCallOutline } from 'react-icons/io5';
+import ModelViewer from './ui/modelViewer';
 
 export default function Home() {
   {/* Client Logo Slider Configuration */}
@@ -109,30 +109,15 @@ export default function Home() {
   return (
     <div className="w-full min-h-screen 2xl:px-80">
       {/* Header Section */}
-      <div className="h-screen max-h-[1024px]">
-        {/* md:Background Image */}
-        <Image
-          src="https://images.unsplash.com/photo-1714108671525-a8f722f30632?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          alt="Flex"
-          fill
-          className="absolute top-0 z-0 hidden md:block max-h-[1024px]"
-        />
-
-        {/* sm:Background Image */}
-        <Image
-          src={bgImageSmall}
-          alt="Flex"
-          fill
-          className="absolute top-0 z-0 md:hidden"
-        />
-
+      <div className="h-screen max-h-[1024px] radial-bg">
+        <ModelViewer />
         {/* Header Title */}
-        <div className='pt-64 md:pt-60 lg:pt-60 xl:pt-80 min-[2048px]:pt-60 2xl:pt-80 w-[75%]'>
+        {/* <div className='pt-64 md:pt-60 lg:pt-60 xl:pt-80 min-[2048px]:pt-60 2xl:pt-80 w-[75%]'>
           <p className="relative text-4xl md:text-7xl lg:text-6xl xl:text-8xl z-40 text-left font-thin px-5 md:px-20 md:pt-10">We narrate brand stories worth luxury</p>
-        </div>
+        </div> */}
 
         {/* xl:Header Specialties */}
-        <div className='mt-8 w-[50%] mx-20 hidden xl:block'>
+        {/* <div className='mt-8 w-[50%] mx-20 hidden xl:block'>
           <Chip className='mr-1 mt-2' size='lg' >Social Media Marketing</Chip>
           <Chip className='mx-1 mt-2' size='lg' >Brand Marketing</Chip>
           <Chip className='mx-1 mt-2' size='lg' >Content Creation</Chip>
@@ -142,10 +127,10 @@ export default function Home() {
           <Chip className='mx-1 mt-2 text-white' size='lg' variant='bordered'>Augmented Reality (AR)</Chip>
           <Chip className='mx-1 mt-2 text-white' size='lg' variant='bordered'>Blockchain</Chip>
           <Chip className='mx-1 mt-2 text-white' size='lg' variant='bordered'>+</Chip>
-        </div>
+        </div> */}
 
         {/* md:Header Specialties */}
-        <div className='mt-8 w-[50%] mx-20 hidden md:block xl:hidden'>
+        {/* <div className='mt-8 w-[50%] mx-20 hidden md:block xl:hidden'>
           <Chip className='mr-1 mt-2' size='md' >Social Media Marketing</Chip>
           <Chip className='mx-1 mt-2' size='md' >Brand Marketing</Chip>
           <Chip className='mx-1 mt-2' size='md' >Content Creation</Chip>
@@ -155,10 +140,10 @@ export default function Home() {
           <Chip className='mx-1 mt-2 text-white' size='md' variant='bordered'>Augmented Reality (AR)</Chip>
           <Chip className='mx-1 mt-2 text-white' size='md' variant='bordered'>Blockchain</Chip>
           <Chip className='mx-1 mt-2 text-white' size='md' variant='bordered'>+</Chip>
-        </div>
+        </div> */}
 
         {/* sm:Header Specialties */}
-        <div className='mt-1 w-[75%] mx-5 md:hidden'>
+        {/* <div className='mt-1 w-[75%] mx-5 md:hidden'>
           <Chip className='mx-1 mt-2 text-xs' size='sm' >Social Media Marketing</Chip>
           <Chip className='mx-1 mt-2' size='sm' >Brand Marketing</Chip>
           <Chip className='mx-1 mt-2' size='sm' >Content Creation</Chip>
@@ -168,15 +153,15 @@ export default function Home() {
           <Chip className='mx-1 mt-2 text-white' size='sm' variant='bordered'>Augmented Reality (AR)</Chip>
           <Chip className='mx-1 mt-2 text-white' size='sm' variant='bordered'>Blockchain</Chip>
           <Chip className='mx-1 mt-2 text-white' size='sm' variant='bordered'>+</Chip>
-        </div>
+        </div> */}
 
         {/* Header Tail */}
-        <div className='relative pt-56 lg:pt-44 xl:pt-64 px-5 md:px-10 z-40 flex'>
+        {/* <div className='relative pt-56 lg:pt-44 xl:pt-64 px-5 md:px-10 z-40 flex'>
           <BsMouse size={36} color='#d4d4d8' className='mx-auto hidden xl:block' />
           <BsMouse size={28} color='#d4d4d8' className='mx-auto hidden lg:block xl:hidden' />
           <IoIosArrowDropdown size={36} color='#d4d4d8' className='mx-auto hidden md:block lg:hidden' />
           <p className='absolute font-thin text-sm md:text-normal xl:text-xl tracking-widest self-end right-5 md:right-10'>Stories. Worth. Luxe</p>
-        </div>
+        </div> */}
       </div>
 
       {/* Stats Section */}

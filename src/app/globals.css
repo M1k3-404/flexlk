@@ -49,8 +49,12 @@ body {
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: blue; /* Set thumb color */
+  background-color: white; /* Set thumb color */
   border-radius: 6px; /* Add rounded corners */
+}
+
+.radial-bg {
+  background: radial-gradient(circle, #0c0c0c, #000);
 }
 
 .services-bg {
