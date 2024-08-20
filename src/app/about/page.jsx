@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import { ArrowUpRight } from "@heroicons/react/outline";
 import { Marquee } from "./Marquee";
 
 const page = () => {
